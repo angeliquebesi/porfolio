@@ -1,8 +1,14 @@
 import React from "react";
+import { NavBar } from "components/index";
 import "./styles.scss";
 
 function Contact() {
-  return <div>Me contacter</div>;
+  return (
+    <>
+      <NavBar />
+      <div>Me contacter</div>
+    </>
+  );
 }
 
 export default Contact;

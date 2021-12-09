@@ -1,8 +1,14 @@
 import React from "react";
+import { NavBar } from "components/index";
 import "./styles.scss";
 
 function Projet() {
-  return <div>Projets</div>;
+  return (
+    <>
+      <NavBar />
+      <div>Projets</div>
+    </>
+  );
 }
 
 export default Projet;
