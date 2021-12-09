@@ -1,18 +1,15 @@
 import React from "react";
-
-import { Header, Footer } from "components";
-
+import { NavBar } from "components/index";
 import "./style.scss";
 
 const Home = () => (
   <>
-    <Header />
+    <NavBar />
 
     <main className="home">
-      <h1>Home Here !</h1>
+      <h1>Angélique Bésineaud</h1>
+      <h2> Je suis développeuse web et web mobile!</h2>
     </main>
-
-    <Footer />
   </>
 );
 
