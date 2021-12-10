@@ -6,7 +6,6 @@ function About() {
   return (
     <div className="relative min-h-screen md:flex">
       <NavBar />
-      <div>A propos</div>
       <Experiences />
     </div>
   );

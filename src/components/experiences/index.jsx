@@ -1,16 +1,34 @@
 import React from "react";
-import { Chrono } from "react-chrono";
-import data from "../../api/remove";
-import legal from "../../assets/icons/legal.png";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import BalanceRoundedIcon from "@mui/icons-material/BalanceRounded";
+import data from "../../api/data";
 
 function Experiences() {
   return (
-    <div style={{ width: "100%", height: "95vh" }}>
-      <Chrono items={data} mode="VERTICAL_ALTERNATING">
-        <div className="chrono-icons">
-          <img src={legal} alt="balnce de justice" />
-        </div>
-      </Chrono>
+    <div>
+      <VerticalTimeline>
+        {data.map((exp) => (
+          <VerticalTimelineElement
+            key={exp.id}
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: "rgb(33, 150, 243)", color: "blue" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+            date={exp.période}
+            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            icon={<BalanceRoundedIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">{exp.title}</h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              {exp.entreprise}
+            </h4>
+            <p>{exp.description}</p>
+          </VerticalTimelineElement>
+        ))}
+      </VerticalTimeline>
     </div>
   );
 }

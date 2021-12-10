@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Sidebar from "components/sidebar/index";
 
 import "./style.scss";
@@ -12,9 +13,11 @@ const NavBar = () => {
     <>
       <div className="flex flex-row justify-between md:hidden border-dashed border-b-2 border-light-blue-500 border-opacity-35">
         {/* * Menu Mobile */}
-        <div className=" bg-white flex flex-row justify-between ">
-          <h3 className="block p-4 text-blue-300 font-bold">Angélique </h3>
-        </div>
+        <Link to="/">
+          <div className=" bg-white flex flex-row justify-between ">
+            <h3 className="block p-4 text-blue-300 font-bold">Angélique </h3>
+          </div>
+        </Link>
         {/* Button Menu Mobile */}
         <button
           type="button"
