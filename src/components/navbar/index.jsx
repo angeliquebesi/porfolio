@@ -11,19 +11,15 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="flex flex-row justify-between md:hidden border-dashed border-b-2 border-light-blue-500 border-opacity-35">
+      <div className="flex flex-row justify-between md:hidden border-dashed border-b-1 border-light-blue-500 border-opacity-35">
         {/* * Menu Mobile */}
         <Link to="/">
-          <div className=" bg-white flex flex-row justify-between ">
-            <h3 className="block p-4 text-blue-300 font-bold">Angélique </h3>
+          <div className="flex flex-row justify-between ">
+            <h3 className="block p-4 text-indigo-600 font-bold">Angélique </h3>
           </div>
         </Link>
         {/* Button Menu Mobile */}
-        <button
-          type="button"
-          className="p-4 focus:outline-none focus:bg-blue-100"
-          onClick={handleSidebar}
-        >
+        <button type="button" className="p-4" onClick={handleSidebar}>
           <svg
             className="h-5 w-5"
             xmlns="http://www.w3.org/2000/svg"

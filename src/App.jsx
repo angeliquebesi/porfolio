@@ -1,8 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-
 import { Home, Page404, About, Projet, Contact } from "pages";
-
 import "./App.scss";
 
 const App = () => (

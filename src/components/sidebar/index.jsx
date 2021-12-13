@@ -6,8 +6,8 @@ import me from "../../assets/images/me.jpg";
 import "./style.scss";
 
 const Sidebar = () => (
-  <div className="sideBar md:visible bg-white text-blue-300 w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out border-dashed border-2 border-light-blue-500 border-opacity-35">
-    <div className="border-dashed border-b-2 border-light-blue-500 border-opacity-35">
+  <div className="sideBar md:visible text-indigo-600 w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out border-dashed border-2 border-light-blue-500 border-opacity-35">
+    <div className="border-dashed border-b-1 border-light-blue-500 border-opacity-35">
       <div className="flex flex-col items-center">
         {/* Image et prénom */}
         <Link to="/">
@@ -18,7 +18,7 @@ const Sidebar = () => (
           />
         </Link>
         <h3
-          className="text-center text-4xl font-light mt-0
+          className="text-center text-4xl text-indigo-600 mt-0
 transition duration-500 ease-in-out"
         >
           Angélique Bésineaud
