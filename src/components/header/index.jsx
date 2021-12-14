@@ -1,4 +1,6 @@
 import React from "react";
+import WhiteButton from "../whitebutton/index";
+import BlueButton from "../bluebutton/index";
 import "./style.scss";
 
 function Header(props) {
@@ -16,6 +18,10 @@ function Header(props) {
         <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
           {acc.pres}
         </p>
+        <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+          <BlueButton name={acc.blue} />
+          <WhiteButton name={acc.white} />
+        </div>
       </div>
     </header>
   ));
