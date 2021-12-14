@@ -1,20 +1,15 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "description": "Create React App Description",
+  "short_name": "Portfolio Angelique",
+  "name": "developpeuse web full-stack Javascript",
+  "description": "React JS, Node JS, Express",
   "icons": [
     {
-      "src": "/images/icons-vector.svg",
-      "type": "image/svg+xml",
-      "sizes": "512x512"
-    },
-    {
-      "src": "/images/icons-192.png",
+      "src": "./logo192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/images/icons-512.png",
+      "src": "./logo512.png",
       "type": "image/png",
       "sizes": "512x512"
     }

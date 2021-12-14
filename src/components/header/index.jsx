@@ -6,7 +6,7 @@ import "./style.scss";
 function Header(props) {
   const { hero } = props;
   return hero.map((acc) => (
-    <header className="header">
+    <header className="header" key={acc.id}>
       <div className="sm:text-center lg:text-left">
         <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
           <span className="block xl:inline">{acc.titre}</span>

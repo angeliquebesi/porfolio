@@ -4,7 +4,7 @@ import Sidebar from "components/sidebar/index";
 
 import "./style.scss";
 
-const NavBar = () => {
+function NavBar() {
   const handleSidebar = () => {
     document.querySelector(".sideBar").classList.toggle("-translate-x-full");
   };
@@ -40,6 +40,6 @@ const NavBar = () => {
       <Sidebar />
     </>
   );
-};
+}
 
 export default NavBar;

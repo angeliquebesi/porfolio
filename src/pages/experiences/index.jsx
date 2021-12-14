@@ -7,8 +7,7 @@ import "react-vertical-timeline-component/style.min.css";
 import WorkIcon from "@mui/icons-material/Work";
 import SchoolIcon from "@mui/icons-material/School";
 import { NavBar } from "components/index";
-import experiences from "../../api/experiences";
-import school from "../../api/school";
+import { experiences, school } from "../../api/experiences";
 
 function Experiences() {
   return (
