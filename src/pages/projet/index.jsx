@@ -1,4 +1,5 @@
 import React from "react";
+import { CarouselItem } from "../../components/projets/index";
 import { NavBar, Header, Projets } from "../../components/index";
 import hero from "../../api/hero";
 import "./styles.scss";
@@ -13,7 +14,11 @@ function Réalisation() {
           <Header key={contenuHero.id} hero={contenuHero} />
         </div>
         <div className="min-h-screen">
-          <Projets />
+          <Projets>
+            <CarouselItem>Item1</CarouselItem>
+            <CarouselItem>Item2</CarouselItem>
+            <CarouselItem>Item3</CarouselItem>
+          </Projets>
         </div>
       </main>
     </div>
