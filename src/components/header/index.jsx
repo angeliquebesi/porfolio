@@ -19,8 +19,8 @@ function Header(props) {
           {acc.pres}
         </p>
         <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-          <BlueButton name={acc.blue} />
-          <WhiteButton name={acc.white} />
+          {acc.blue ? <BlueButton name={acc.blue} /> : ""}
+          {acc.white ? <WhiteButton name={acc.white} /> : ""}
         </div>
       </div>
     </header>
