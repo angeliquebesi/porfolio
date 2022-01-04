@@ -1,6 +1,6 @@
 import React from "react";
-import { NavBar, Header } from "components/index";
-import hero from "api/hero";
+import hero from "../../api/hero";
+import { NavBar, Header } from "../../components/index";
 import "./style.scss";
 
 function Home() {
