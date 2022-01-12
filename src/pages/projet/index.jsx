@@ -1,8 +1,5 @@
 import React from "react";
-// import projets from "../../api/projets";
-import { Carousel } from "react-responsive-carousel";
-// import projets from "../../api/projets";
-import { NavBar, Header } from "../../components/index";
+import { NavBar, Header, Projets } from "../../components/index";
 import hero from "../../api/hero";
 import "./styles.scss";
 
@@ -16,9 +13,7 @@ function Réalisation() {
           <Header key={contenuHero.id} hero={contenuHero} />
         </div>
         <div className="min-h-screen">
-          <Carousel showThumbs={false} infiniteLoop>
-            <div style={{ height: "10em", color: "black" }}> ESSAI </div>
-          </Carousel>
+          <Projets />
         </div>
       </div>
     </div>

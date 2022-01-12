@@ -1,14 +1,18 @@
+// import mobileprojet1 from "../assets/images/mobileprojet1.png";
+
 const projets = [
   {
     id: 1,
     title: "Nantes Autrement",
     description: `Premier projet de la formation.
     Les consignes étaient de créer un site uniquement en HTML et CSS avec
-    possibilité d&rsquo;intégrer un peu de Javascript. Le site devait
-    être responsive et il était interdit d&rsquo;utiliser des librairies.
+    possibilité d'intégrer un peu de Javascript. Le site devait
+    être responsive et il était interdit d'utiliser des librairies.
     Nous étions 4 personnes par projet.`,
-    technos: ["HTML", "CSS", "Javascrpt"],
+    technos: ["HTML", "CSS", "Javascript"],
     link: "https://angeliquebesi.github.io/project-nantes/",
+    tâches: ["hero", "footer", "cards des lieux", "modal"],
+    // images: { mobileprojet1 },
   },
   {
     id: 2,
@@ -20,6 +24,7 @@ const projets = [
     Nous étions 4 personnes par projet.`,
     technos: ["React JS", "Bootstrap"],
     link: "https://wild-magic-school.netlify.app/",
+    tâches: ["Page d'accueil", "page de contact", "quizz"],
   },
   {
     id: 3,
@@ -31,6 +36,7 @@ const projets = [
     Nous étions 4 personnes par projet.`,
     technos: ["React JS"],
     link: "https://discover-wcs.netlify.app/",
+    tâches: ["Page de choix des styles"],
   },
   {
     id: 4,
@@ -41,6 +47,11 @@ const projets = [
     Pour la gestion des données nous avons utilisé Express, Prisma.
     Nous étions 4 personnes par projet.`,
     technos: ["React JS", "Tailwind", "Express", "Prisma"],
+    tâches: [
+      "modelisation base de données",
+      "envoi de notification mails",
+      "authentification",
+    ],
   },
 ];
 
