@@ -1,4 +1,11 @@
-// import mobileprojet1 from "../assets/images/mobileprojet1.png";
+import {
+  mobileprojet1,
+  // mobileprojet2,
+  // mobileprojet3,
+  // padprojet3,
+  pcprojet1,
+  // pcprojet2,
+} from "../assets/images";
 
 const projets = [
   {
@@ -11,8 +18,7 @@ const projets = [
     Nous étions 4 personnes par projet.`,
     technos: ["HTML", "CSS", "Javascript"],
     link: "https://angeliquebesi.github.io/project-nantes/",
-    tâches: ["hero", "footer", "cards des lieux", "modal"],
-    // images: { mobileprojet1 },
+    screen: [mobileprojet1, pcprojet1],
   },
   {
     id: 2,
@@ -24,7 +30,7 @@ const projets = [
     Nous étions 4 personnes par projet.`,
     technos: ["React JS", "Bootstrap"],
     link: "https://wild-magic-school.netlify.app/",
-    tâches: ["Page d'accueil", "page de contact", "quizz"],
+    // screen: [{ mobileprojet2 }, { pcprojet2 }],
   },
   {
     id: 3,
@@ -36,7 +42,7 @@ const projets = [
     Nous étions 4 personnes par projet.`,
     technos: ["React JS"],
     link: "https://discover-wcs.netlify.app/",
-    tâches: ["Page de choix des styles"],
+    // screen: [{ mobileprojet3 }, { padprojet3 }],
   },
   {
     id: 4,
@@ -47,12 +53,6 @@ const projets = [
     Pour la gestion des données nous avons utilisé Express, Prisma.
     Nous étions 4 personnes par projet.`,
     technos: ["React JS", "Tailwind", "Express", "Prisma"],
-    tâches: [
-      "modelisation base de données",
-      "envoi de notification mails",
-      "authentification",
-    ],
   },
 ];
-
 export default projets;
