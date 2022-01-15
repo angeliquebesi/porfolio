@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import me from "../../assets/images/me.jpg";
+import { me } from "../../assets/images";
 import "./style.scss";
 
 function Sidebar() {

@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from "react";
 import emailjs from "@emailjs/browser";
-import { NavBar } from "components/index";
+import { NavBar } from "../../components";
 import "./styles.scss";
 
 function Contact() {

@@ -1,68 +1,63 @@
-import React, { useState } from "react";
-// import projets from "../../api/projets";
+import React from "react";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+// import { pcprojet1 } from "../../assets/images/index";
+import projets from "../../api/projets";
 import "./style.scss";
 
-export const CarouselItem = ({ children, width }) => (
-  <div className="carousel-item" style={{ width }}>
-    {children}
-  </div>
-);
-
-function Projets({ children }) {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const updateIndex = (newIndex) => {
-    let nIndex = newIndex;
-    if (nIndex < 0) {
-      nIndex = 0;
-    } else if (nIndex >= React.Children.count(children)) {
-      nIndex = React.Children.count(children) - 1;
-    }
-    setActiveIndex(nIndex);
-  };
+function Projets() {
   return (
-    <div className="carousel">
-      <div
-        className="inner"
-        style={{ transform: `translateX(-${activeIndex * 100}%)` }}
-      >
-        {React.Children.map(children, (child) =>
-          React.cloneElement(child, { width: "100%" })
-        )}
-      </div>
-      <div className="indicators">
-        <button type="button" onClick={() => updateIndex(activeIndex - 1)}>
-          Prec
-        </button>
-        {React.Children.map(children, (child, index) => (
-          <button
-            type="button"
-            className={`${index === activeIndex ? "active" : ""}`}
-            onClick={() => {
-              updateIndex(index);
-            }}
+    <div className="w-full max-w-screen-lg">
+      <Carousel showThumbs={false} infiniteLoop>
+        {projets.map((proj) => (
+          <div
+            className="h-full w-full bg-gray-100 rounded-lg m-h-64 p-2 transform hover:shadow-xl transition duration-300"
+            key={proj.id}
           >
-            {index + 1}
-          </button>
+            <h4 className="text-indigo-600 text-4xl font-bold leading-none">
+              {proj.title}
+            </h4>
+
+            <p className="mt-2 pt-6 text-base text-gray-500 sm:text-lg sm:mx-auto md:text-xl lg:mx-0 leading-none">
+              {proj.description}{" "}
+            </p>
+            <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-6" />
+            <div className="flex justify-around mt-6 mb-2 text-gray-500 text-base text-gray-500 sm:text-lg sm:mx-auto md:text-xl lg:mx-0">
+              <div>
+                {proj.technos.map((tech) => (
+                  <div>
+                    <ul>
+                      <li key={tech}>{tech}</li>
+                    </ul>
+                  </div>
+                ))}
+                <a
+                  target="_blank"
+                  href={proj.link}
+                  rel="noreferrer"
+                  className="capitalize underline inline-block pt-3 italic"
+                >
+                  {" "}
+                  Lien vers le site{" "}
+                </a>
+              </div>
+              {/* {proj.screenshot.map((photo) => (
+                <div>
+                  <img
+                    key={photo}
+                    src={photo}
+                    alt="screenshot"
+                    className="h-60 px-5"
+                  />
+                </div>
+              ))} */}
+              {/* <img src={pcprojet1} alt="screenshot" className="h-60 px-5" /> */}
+            </div>
+          </div>
         ))}
-        <button type="button" onClick={() => updateIndex(activeIndex + 1)}>
-          Suivant
-        </button>
-      </div>
+      </Carousel>
     </div>
   );
 }
 
 export default Projets;
-
-// return projets.map((site) => (
-//   <div>
-//     <h2> {site.title}</h2>
-//     <p>{site.description}</p>
-//     {site.technos.map((tech) => (
-//       <ul>
-//         <li>{tech}</li>
-//       </ul>
-//     ))}
-//     <button type="button"> Lien vers le site </button>
-//   </div>
-// ));

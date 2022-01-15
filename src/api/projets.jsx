@@ -1,14 +1,24 @@
+import {
+  mobileprojet1,
+  // mobileprojet2,
+  // mobileprojet3,
+  // padprojet3,
+  pcprojet1,
+  // pcprojet2,
+} from "../assets/images";
+
 const projets = [
   {
     id: 1,
     title: "Nantes Autrement",
     description: `Premier projet de la formation.
     Les consignes étaient de créer un site uniquement en HTML et CSS avec
-    possibilité d&rsquo;intégrer un peu de Javascript. Le site devait
-    être responsive et il était interdit d&rsquo;utiliser des librairies.
+    possibilité d'intégrer un peu de Javascript. Le site devait
+    être responsive et il était interdit d'utiliser des librairies.
     Nous étions 4 personnes par projet.`,
-    technos: ["HTML", "CSS", "Javascrpt"],
+    technos: ["HTML", "CSS", "Javascript"],
     link: "https://angeliquebesi.github.io/project-nantes/",
+    screenshot: [mobileprojet1, pcprojet1],
   },
   {
     id: 2,
@@ -20,6 +30,7 @@ const projets = [
     Nous étions 4 personnes par projet.`,
     technos: ["React JS", "Bootstrap"],
     link: "https://wild-magic-school.netlify.app/",
+    // screen: [{ mobileprojet2 }, { pcprojet2 }],
   },
   {
     id: 3,
@@ -31,6 +42,7 @@ const projets = [
     Nous étions 4 personnes par projet.`,
     technos: ["React JS"],
     link: "https://discover-wcs.netlify.app/",
+    // screen: [{ mobileprojet3 }, { padprojet3 }],
   },
   {
     id: 4,
@@ -43,5 +55,4 @@ const projets = [
     technos: ["React JS", "Tailwind", "Express", "Prisma"],
   },
 ];
-
 export default projets;
