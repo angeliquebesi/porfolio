@@ -31,11 +31,7 @@ const hero = [
     id: 3,
     titre: "Mes réalisations",
     soustitre: "",
-    pres: `Lors de ma formation j'ai été amené à réaliser différents projets pour mettre en pratique les connaissances acquises. Voici une présentation de ces différentes réalisations.`,
-    blue: {
-      texte: "Découvrir",
-      link: "",
-    },
+    pres: `Au cours de ma formation à la Wild Code School j'ai réalisé différents projets afin de mettre en application les compétences étudiées. Au cours des 5 mois nous avions trois "grands" projets et deux hackatons. Tous ces projets ont été réalisés par groupe. Voici une présentation de ces différentes réalisations.`,
   },
 ];
 

@@ -18,7 +18,7 @@ const projets = [
     Nous étions 4 personnes par projet.`,
     technos: ["HTML", "CSS", "Javascript"],
     link: "https://angeliquebesi.github.io/project-nantes/",
-    screen: [mobileprojet1, pcprojet1],
+    screenshot: [mobileprojet1, pcprojet1],
   },
   {
     id: 2,
