@@ -1,10 +1,10 @@
 import {
   mobileprojet1,
-  // mobileprojet2,
-  // mobileprojet3,
-  // padprojet3,
+  mobileprojet2,
+  mobileprojet3,
+  padprojet3,
   pcprojet1,
-  // pcprojet2,
+  pcprojet2,
 } from "../assets/images";
 
 const projets = [
@@ -30,7 +30,7 @@ const projets = [
     Nous étions 4 personnes par projet.`,
     technos: ["React JS", "Bootstrap"],
     link: "https://wild-magic-school.netlify.app/",
-    // screen: [{ mobileprojet2 }, { pcprojet2 }],
+    screenshot: [mobileprojet2, pcprojet2],
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ const projets = [
     Nous étions 4 personnes par projet.`,
     technos: ["React JS"],
     link: "https://discover-wcs.netlify.app/",
-    // screen: [{ mobileprojet3 }, { padprojet3 }],
+    screenshot: [mobileprojet3, padprojet3],
   },
   {
     id: 4,
@@ -53,6 +53,7 @@ const projets = [
     Pour la gestion des données nous avons utilisé Express, Prisma.
     Nous étions 4 personnes par projet.`,
     technos: ["React JS", "Tailwind", "Express", "Prisma"],
+    screenshot: [],
   },
 ];
 export default projets;
