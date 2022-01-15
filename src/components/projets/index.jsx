@@ -41,7 +41,7 @@ function Projets() {
                   Lien vers le site{" "}
                 </a>
               </div>
-              {/* {proj.screenshot.map((photo) => (
+              {proj.screenshot.map((photo) => (
                 <div>
                   <img
                     key={photo}
@@ -50,8 +50,7 @@ function Projets() {
                     className="h-60 px-5"
                   />
                 </div>
-              ))} */}
-              {/* <img src={pcprojet1} alt="screenshot" className="h-60 px-5" /> */}
+              ))}
             </div>
           </div>
         ))}
