@@ -1,18 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-const items = [
-  {
-    id: 1,
-    intro: "un langage",
-    reponse: "Javascript",
-  },
-  {
-    id: 2,
-    intro: "un framework",
-    reponse: "ReactJS",
-  },
-];
+import items from "api/portrait";
 
 export default function Content({ itemId }) {
   const { reponse } = items.find((item) => item.id === itemId);
@@ -23,7 +11,7 @@ export default function Content({ itemId }) {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <p> {reponse} </p>
+      <p className="font-serif"> {reponse} </p>
     </motion.div>
   );
 }

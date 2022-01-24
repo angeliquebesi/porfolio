@@ -1,7 +1,7 @@
 import React from "react";
 import hero from "../../api/hero";
 import Header from "../header";
-import Portrait from "./portrait";
+import Portrait from "./Portrait Chinois/portrait";
 import "./style.scss";
 
 function Presentation() {
