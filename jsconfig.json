@@ -1,24 +1,22 @@
 {
   "compilerOptions": {
-    "module": "CommonJS",
-    "target": "ES2021",
-    "moduleResolution": "classic",
-    "baseUrl": "./src",
+    "baseUrl": "src",
     "paths": {
-      "api": ["./api"],
-      "api/*": ["./api/*"],
-      "components": ["./components"],
-      "components/*": ["./components/*"],
-      "contexts": ["./contexts"],
-      "contexts/*": ["./contexts/*"],
-      "hooks": ["./hooks"],
-      "hooks/*": ["./hooks/*"],
-      "pages": ["./pages"],
-      "pages/*": ["./pages/*"],
-      "images/*": ["./assets/images/*"],
-      "icons/*": ["./assets/icons/*"]
+      "api": ["api"],
+      "api/": ["api/"],
+      "components": ["components"],
+      "components/": ["components/"],
+      "contexts": ["contexts"],
+      "contexts/": ["contexts/"],
+      "hooks": ["hooks"],
+      "hooks/": ["hooks/"],
+      "pages": ["pages"],
+      "pages/": ["pages/"],
+      "motions/": ["motions/"],
+      "plugins": ["plugins"],
+      "plugins/": ["plugins/"],
+      "assets/": ["assets/"]
     }
   },
-  "exclude": ["node_modules", "dist", "build"],
-  "noEmit": true
+  "exclude": ["node_modules", "dist", "build"]
 }

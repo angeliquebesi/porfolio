@@ -2,7 +2,7 @@ const hero = [
   {
     id: 1,
     titre: "Angélique BÉSINEAUD",
-    soustitre: "développeuse web",
+    soustitre: "Développeuse web",
     pres: "Bienvenue sur mon premier portfolio.",
     blue: {
       texte: "Mes réalisations",

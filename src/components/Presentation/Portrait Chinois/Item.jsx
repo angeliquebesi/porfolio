@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import items from "api/portrait";
+import items from "../../../api/portrait";
 import Content from "./Content";
 
 export default function Item({ itemId }) {
